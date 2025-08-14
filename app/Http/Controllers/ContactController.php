@@ -126,7 +126,7 @@ class ContactController extends Controller
 
         // Check if update was successful
         if ($contact) {
-            return redirect()->route('contact.index')-with('success', 'Contact updated successfully.');
+            return redirect()->route('contacts.index')-with('success', 'Contact updated successfully.');
         }
 
         // Redirect back with error if update failed
@@ -145,7 +145,7 @@ class ContactController extends Controller
 
         // Check if deletion was successful
         if ($success) {
-            return redirect()->route('contact.index')->with('success', 'Contact deleted successfully.');
+            return redirect()->route('contacts.index')->with('success', 'Contact deleted successfully.');
         }
 
         // Redirect back with error if deletion failed

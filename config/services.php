@@ -36,6 +36,6 @@ return [
     ],
 
     'contacts_api' => [
-        'base_uri' => env('API_CONTACT_FORM_BASE_URI', 'http://localhost:8001/contacts'),
+        'base_uri' => env('API_CONTACT_FORM_BASE_URI', 'http://localhost:8080/contacts'),
     ]
 ];

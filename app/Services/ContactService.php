@@ -72,7 +72,7 @@ class ContactService
     public function createContact(array $data) {
         $response = Http::post($this->apiUrl, $data);
 
-        if ($response->successful() && $response['code'] === 'SUCCESS' && is_array($response['data'])) {
+        if ($response->successful() && $response['code'] === 'CREATED' && is_array($response['data'])) {
             return $response['data'];
         }
 
